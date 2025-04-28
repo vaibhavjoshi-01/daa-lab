@@ -3,12 +3,12 @@
 using namespace std;
 void path(vector<int> &parent,int j)
 {
-    if(parenr[j]==-1)
+    if(parent[j]==-1)
     {
         cout<<j<<" ";
         return;
     }
-    path(parent,parenr[j]);
+    path(parent,parent[j]);
     cout<<j<<" ";
 }
 
